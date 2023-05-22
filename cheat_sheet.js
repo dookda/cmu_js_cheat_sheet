@@ -106,14 +106,68 @@ greet("John");
 // ### Arrays
 let arr = [1, 2, 3, 4, 5];
 
-// Accessing elements
-let firstElement = arr[0];
-let lastElement = arr[arr.length - 1];
+// Iterating over elements
+for (let i = 0; i < arr.length; i++) {
+    console.log(arr[i]);
+}
 
-// Modifying elements
-arr[2] = 10;
-
-// Array methods
+// Array methods (Continued)
 arr.push(6); // adds an element to the end
 arr.pop(); // removes the last element
-arr.unshift(0); // adds an element to
+arr.unshift(0); // adds an element to the beginning
+arr.shift(); // removes the first element
+arr.splice(2, 1); // removes 1 element at index 2
+arr.slice(1, 4); // returns a new array from index 1 to 3 (exclusive)
+arr.concat([6, 7, 8]); // combines arrays
+arr.join(", "); // converts elements to a string with specified separator
+arr.indexOf(3); // returns the index of the first occurrence of 3
+arr.includes(5); // returns true if array contains 5
+
+// Array destructuring
+let [a, b, c] = arr;
+console.log(a, b, c); // 1 2 3
+
+// ### Objects
+// Object declaration
+let obj = { name: "John", age: 25 };
+
+// Accessing properties
+console.log(obj.name); // John
+console.log(obj["age"]); // 25
+
+// Modifying properties
+obj.name = "Jane";
+
+// Object methods
+Object.keys(obj); // returns an array of keys
+Object.values(obj); // returns an array of values
+Object.entries(obj); // returns an array of key-value pairs
+
+// Object destructuring
+let { name, age } = obj;
+console.log(name, age); // Jane 25
+
+// ### Strings
+let str = "Hello, World!";
+
+// String length
+console.log(str.length);
+
+// Accessing characters
+console.log(str[0]); // H
+
+// Modifying case
+console.log(str.toUpperCase());
+console.log(str.toLowerCase());
+
+// Searching and replacing
+console.log(str.indexOf("World")); // returns the index of "World"
+console.log(str.includes("Hello")); // returns true if "Hello" is present
+console.log(str.replace("World", "Universe")); // replaces "World" with "Universe"
+
+// Extracting substrings
+console.log(str.slice(7, 12)); // returns "World"
+console.log(str.substring(7, 12)); // returns "World"
+console.log(str.substr(7, 5)); // returns "World"
+
+
