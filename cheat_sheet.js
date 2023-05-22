@@ -13,6 +13,29 @@ let obj = { name: "John", age: 25 }; // object
 let n = null; // null
 let u = undefined; // undefined
 
+// ### Strings
+let str = "Hello, World!";
+
+// String length
+console.log(str.length);
+
+// Accessing characters
+console.log(str[0]); // H
+
+// Modifying case
+console.log(str.toUpperCase());
+console.log(str.toLowerCase());
+
+// Searching and replacing
+console.log(str.indexOf("World")); // returns the index of "World"
+console.log(str.includes("Hello")); // returns true if "Hello" is present
+console.log(str.replace("World", "Universe")); // replaces "World" with "Universe"
+
+// Extracting substrings
+console.log(str.slice(7, 12)); // returns "World"
+console.log(str.substring(7, 12)); // returns "World"
+console.log(str.substr(7, 5)); // returns "World"
+
 // ### Operators
 // Arithmetic operators
 let sum = a + b;
@@ -147,27 +170,5 @@ Object.entries(obj); // returns an array of key-value pairs
 let { name, age } = obj;
 console.log(name, age); // Jane 25
 
-// ### Strings
-let str = "Hello, World!";
-
-// String length
-console.log(str.length);
-
-// Accessing characters
-console.log(str[0]); // H
-
-// Modifying case
-console.log(str.toUpperCase());
-console.log(str.toLowerCase());
-
-// Searching and replacing
-console.log(str.indexOf("World")); // returns the index of "World"
-console.log(str.includes("Hello")); // returns true if "Hello" is present
-console.log(str.replace("World", "Universe")); // replaces "World" with "Universe"
-
-// Extracting substrings
-console.log(str.slice(7, 12)); // returns "World"
-console.log(str.substring(7, 12)); // returns "World"
-console.log(str.substr(7, 5)); // returns "World"
 
 
